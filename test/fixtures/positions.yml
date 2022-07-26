@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  quantity: 1
+  cost: 1
+  ma: 1
+  st: 1
+  ag: MyString
+  pa: MyString
+  av: MyString
+  skills: MyString
+  traits: MyString
+  primary: MyString
+  secondary: MyString
+  race: one
+
+two:
+  name: MyString
+  quantity: 1
+  cost: 1
+  ma: 1
+  st: 1
+  ag: MyString
+  pa: MyString
+  av: MyString
+  skills: MyString
+  traits: MyString
+  primary: MyString
+  secondary: MyString
+  race: two

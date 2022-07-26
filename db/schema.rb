@@ -10,7 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_26_214934) do
+ActiveRecord::Schema.define(version: 2022_07_26_220731) do
+
+  create_table "positions", force: :cascade do |t|
+    t.string "name"
+    t.integer "quantity"
+    t.integer "cost"
+    t.integer "ma"
+    t.integer "st"
+    t.string "ag"
+    t.string "pa"
+    t.string "av"
+    t.string "skills"
+    t.string "traits"
+    t.string "primary"
+    t.string "secondary"
+    t.integer "race_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["race_id"], name: "index_positions_on_race_id"
+  end
 
   create_table "races", force: :cascade do |t|
     t.string "name"
@@ -20,4 +39,5 @@ ActiveRecord::Schema.define(version: 2022_07_26_214934) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "positions", "races"
 end

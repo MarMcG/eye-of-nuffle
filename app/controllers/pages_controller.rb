@@ -4,7 +4,15 @@ class PagesController < ApplicationController
 
   end
 
-  def index
+  def about
+
+  end
+
+  def league
+
+  end
+
+  def tournament
 
   end
 end

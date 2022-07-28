@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://kit.fontawesome.com/8562441421.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <p>pages#home</p>
@@ -37,13 +39,13 @@
       quod qui quae dolore aliquam.
     </p>
   </div>
-  <a href="">Get Started</a>
+  <%= link_to "Get Started", "/create" %>
   <hr>
   <footer>
     <ul>
-      <li>fb</li>
-      <li>naf</li>
-      <li>gw</li>
+      <li><a href="https://www.games-workshop.com/en-CA/Boxed-Games?N=3196314429+1822523585&Nr=AND%28product.locale%3Aen_CA_gw%2Csku.siteId%3ACA_gw%29&Nrs=collection%28%29%2Frecord%5Bproduct.startDate+%3C%3D+1659008400000+and+product.endDate+%3E%3D+1659008400000%5D" target="_blank"><%= image_tag "gwlogo.png", height: 50 %></li>
+      <li><a href="https://member.thenaf.net/index.php?module=NAF&type=tournaments" target="_blank"><%= image_tag "naf.png", height: 30 %></li>
+      <li><a href="https://www.bloodbowl.com/" target="_blank"><%= image_tag "bblogo.jpg", height: 30 %></li>
     </ul>
   </footer>
 </body>

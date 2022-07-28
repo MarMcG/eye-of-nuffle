@@ -1,18 +1,10 @@
 class PagesController < ApplicationController
 
-  def home
+  def home; end
 
-  end
+  def about; end
 
-  def about
+  def league; end
 
-  end
-
-  def league
-
-  end
-
-  def tournament
-
-  end
+  def tournament; end
 end

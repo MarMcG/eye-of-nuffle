@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
   get "league", to: "pages#league"
   get "tournament", to: "pages#tournament"
+  get "create", to: "pages#create"
 end

@@ -1,22 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
 <p>pages#create</p>
-  <header>
-    <nav>
+<%= render 'shared/navbar' %>
+<div>
+  <h2>Team Selection</h2>
+  <div data-controller="hello">
+    <div>
       <ul>
-        <li><%= link_to "HOME", "/" %></li>
-        <li><%= link_to "LEAGUE", "/league" %></li>
-        <li><%= link_to "TOURNAMENT", "/tournament" %></li>
-        <li><%= link_to "ABOUT", "/about" %></li>
+        <li>Human</li>
+        <li>Orc</li>
+        <li>Dwarf</li>
+        <li>Elf</li>
       </ul>
-    </nav>
-    <hr>
-</body>
-</html>
+    </div>
+
+    <div>
+      <%= render 'shared/team_human' %>
+    </div>
+  </div>
+
+</div>

@@ -2,21 +2,48 @@
 <%= render 'shared/navbar' %>
 <div>
   <h2>Team Selection</h2>
-  <div data-controller="hello">
+  <div data-controller="hide-view">
+
     <div>
-      <ul>
-        <li>Human</li>
-        <li>Orc</li>
-        <li>Dwarf</li>
-        <li>Elven Union</li>
-        <li>Undead</li>
-        <li>Goblin</li>
-        <li>Halfling</li>
-      </ul>
+      <button data-action="click->hide-view#human">Human</button>
+      <button data-action="click->hide-view#orc">Orc</button>
+      <button data-action="click->hide-view#dwarf">Dwarf</button>
+      <button data-action="click->hide-view#prelf">Elven Union</button>
+      <button data-action="click->hide-view#undead">Undead</button>
+      <button data-action="click->hide-view#goblin">Goblin</button>
+      <button data-action="click->hide-view#halfling">Halfling</button>
     </div>
 
     <div>
-      <%= render 'shared/team_human' %>
+
+      <div data-hide-view-target="human" class="d-none">
+        <%= render 'shared/team_human' %>
+      </div>
+
+      <div data-hide-view-target="orc" class="d-none">
+        <%= render 'shared/team_orc' %>
+      </div>
+
+      <div data-hide-view-target="dwarf" class="d-none">
+        <%= render 'shared/team_dwarf' %>
+      </div>
+
+      <div data-hide-view-target="prelf" class="d-none">
+        <%= render 'shared/team_prelf' %>
+      </div>
+
+      <div data-hide-view-target="undead" class="d-none">
+        <%= render 'shared/team_undead' %>
+      </div>
+
+      <div data-hide-view-target="goblin" class="d-none">
+        <%= render 'shared/team_goblin' %>
+      </div>
+
+      <div data-hide-view-target="halfling" class="d-none">
+        <%= render 'shared/team_halfling' %>
+      </div>
+
     </div>
   </div>
 

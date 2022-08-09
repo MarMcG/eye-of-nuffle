@@ -5,4 +5,7 @@
 import { application } from "./application"
 
 import HelloController from "./hello_controller"
+import hide_viewController from "./hide_view_controller"
+
 application.register("hello", HelloController)
+application.register("hide-view", hide_viewController)

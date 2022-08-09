@@ -8,6 +8,8 @@
 p "starting seed"
 Player.delete_all
 p "Deleted all Players"
+Team.delete_all
+p "Deleted all Teams"
 Position.delete_all
 p "Deleted all Positions"
 Race.delete_all
